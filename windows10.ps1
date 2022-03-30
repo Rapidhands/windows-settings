@@ -823,6 +823,7 @@ Set-MpPreference -CloudBlockLevel Default
 Set-MpPreference -SubmitSamplesConsent SendSafeSamples
 Set-MpPreference -CloudExtendedTimeout 50
 Set-MpPreference -SignatureUpdateInterval 8
+Set-MpPreference -EnableNetworkProtection Enabled
 
 # Configure EarlyLaunch antimalware policy
 if (!(Test-Path "HKLM:\SYSTEM\CurrentControlSet\Policies\EarlyLaunch")) {
